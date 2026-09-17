@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <meta name="description"
+    content="Get in touch with Lendra Pradianto for illustration collaborations, commissions, or just to say hello.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="logo">LENDRAW<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#works">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-kicker">Contact</span>
+      <h1>Let's <em>create</em> together</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <span class="hero-kicker" style="color:var(--muted);">Stay Connected</span>
+          <h2 class="section-title">Contact Info</h2>
+          <p style="margin-top:1rem;">Have a drawing commission in mind, an idea you'd like to see brought to life, or
+            just want to talk about art? Send a message through the form or reach out directly using the details below —
+            I'm always happy to hear from you, in between school and sketchbooks.</p>
+          <ul>
+            <li>
+              <span class="ico">@</span>
+              <div><strong>Email</strong><a href="mailto:lendraw30@gmail.com">lendraw30@gmail.com</a></div>
+            </li>
+            <li>
+              <span class="ico">T</span>
+              <div><strong>Phone</strong><a href="tel:+6289654713297">+6289654713297</a></div>
+            </li>
+            <li>
+              <span class="ico">L</span>
+              <div><strong>Location</strong><span>Garut, Indonesia</span></div>
+            </li>
+          </ul>
+          <div class="social-row">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Pinterest">PIN</a>
+            <a href="#" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="hero-kicker" style="color:var(--muted);">Send a Message</span>
+          <h2 class="section-title" style="margin-bottom:1.5rem;">Contact Form</h2>
+
+          <div class="form-success" id="formSuccess">Message sent! Thank you — I'll get back to you soon.</div>
+
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="ec1aafcf-b7d9-46ec-8b38-0d3075819ad2">
+
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?">
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project or idea..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent">Send Message</button>
+            <p class="form-note">This information is only used to reply to your message and is never shared with third
+              parties.</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="map-strip reveal">
+        <img src="images/Banner-2.jpeg" alt="Map of the studio location in Bandung">
+        <span class="pin">LENDRAW'S GALLERY</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">LENDRAW<span class="dot">.</span></a>
+          <p style="margin-top:1rem; max-width:32ch;">Every line begins as a whisper of imagination — a little magic
+            learning, slowly, to breathe.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#works">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:lendraw30@gmail.com">lendraw30@gmail.com</a></li>
+            <li><a href="tel:+6289654713297">+6289654713297</a></li>
+            <li>Garut, Indonesia</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Lendra Pradianto — LENDRAW. Portfolio.</span>
+        <span>Made with ink, pixels and a bit of magic.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lendraw Portofolio</title>
+  <meta name="description"
+    content="Portfolio of Lendra Pradianto — digital artist, traditional artist and photographer. Digital art, traditional art, photography, black & white and colorful work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="logo">LENDRAW<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home" class="active">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#works">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-intro">
+      <span class="hero-kicker">Artist &amp; Photographer</span>
+      <h1 class="hero-name">My name is<br><em>Lendra Pradianto</em></h1>
+      <p style="color:rgba(246,244,238,0.75); max-width:34ch;">An artist moving between reality and imagination, chasing
+        colors and light that feel a little like magic.</p>
+      <div class="eyebrow-pill"><span>Turning ideas into art</span></div>
+    </div>
+    <div class="hero-figure">
+      <img src="images/Banner.jpeg" alt="Lendra Pradianto portrait">
+    </div>
+  </section>
+
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Digital Art</span><span>Traditional Art</span><span>Photography</span><span>Black &amp;
+        White</span><span>Colorful</span>
+      <span>Digital Art</span><span>Traditional Art</span><span>Photography</span><span>Black &amp;
+        White</span><span>Colorful</span>
+      <span>Digital Art</span><span>Traditional Art</span><span>Photography</span><span>Black &amp;
+        White</span><span>Colorful</span>
+    </div>
+  </div>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid reveal">
+        <div class="about-photos">
+          <div class="plate"></div>
+          <div class="frame">
+            <img src="images/Potret.jpeg" alt="Lendra Pradianto in the studio">
+          </div>
+        </div>
+        <div class="about-copy">
+          <span class="hero-kicker" style="color:var(--muted);">Get to know me</span>
+          <h2 class="section-title">Hello<span class="accent-underline">.</span></h2>
+          <p style="margin-top:1rem;">I'm a student who's been drawing since 2020 through breaks, restarts, and a lot of
+            learning along the way. Every piece starts as a rough idea before it's coaxed, slowly, into something that
+            feels a little like magic.</p>
+          <p>I believe good art isn't about being perfect it's about staying curious and letting every sketch, big or
+            small, be a small part of growing into who I want to become.</p>
+          <div class="tool-tags">
+            <span>Digital Art</span>
+            <span>Traditional Art</span>
+            <span>Photography</span>
+            <span>Black &amp; White</span>
+          </div>
+          <a href="about.html" class="btn btn-outline" style="margin-top:1.8rem;">More About Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-strip">
+    <div class="container">
+      <div class="stats-row reveal">
+        <div class="stat"><b data-count="6" data-suffix="+">0</b><span>Years Drawing</span></div>
+        <div class="stat"><b data-count="100" data-suffix="+">0</b><span>Artworks Created</span></div>
+        <div class="stat"><b data-count="5" data-suffix="+">0</b><span>Happy Clients</span></div>
+        <div class="stat"><b data-count="20" data-suffix="+">0</b><span>Sketchbooks Filled</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dim" id="works">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="hero-kicker" style="color:var(--muted);">Selected Work</span>
+          <h2 class="section-title">My Gallery</h2>
+          <p class="section-sub">A collection of art across digital, traditional, photography and more. Click any piece
+            to view it larger.</p>
+        </div>
+      </div>
+
+      <ul class="filter-row" id="filterRow">
+        <li><button class="active" data-filter="all">All</button></li>
+        <li><button data-filter="digital">Digital Art</button></li>
+        <li><button data-filter="traditional">Traditional Art</button></li>
+        <li><button data-filter="photography">Photography</button></li>
+        <li><button data-filter="bw">Black &amp; White</button></li>
+        <li><button data-filter="colorful">Colorful</button></li>
+      </ul>
+
+      <div class="work-grid" id="workGrid">
+        <button class="work-item reveal" type="button" data-cat="photography" data-index="0">
+          <img src="images/Gallery/images-1.jpeg"
+            alt="Photograph of a sunset behind trees, golden hour light rays through the clouds">
+          <span class="work-cap"><span class="cat">Photography</span><span class="title">Golden Hour</span></span>
+        </button>
+        <button class="work-item reveal" type="button" data-cat="colorful" data-index="1">
+          <img src="images/Gallery/images-2.jpeg" alt="Photograph of a crescent moon in a pink and purple evening sky">
+          <span class="work-cap"><span class="cat">Photography</span><span class="title">Crescent Whisper</span></span>
+        </button>
+        <button class="work-item reveal" type="button" data-cat="digital" data-index="2">
+          <img src="images/Gallery/images-3.jpeg"
+            alt="Digital illustration of a girl reaching forward with both hands, warm tones">
+          <span class="work-cap"><span class="cat">Digital Art</span><span class="title">Reaching Out</span></span>
+        </button>
+        <button class="work-item reveal" type="button" data-cat="bw" data-index="3">
+          <img src="images/Gallery/images-4.jpeg" alt="Black and white pencil portrait of a girl wearing glasses">
+          <span class="work-cap"><span class="cat">Black &amp; White</span><span class="title">Behind the
+              Glasses</span></span>
+        </button>
+        <button class="work-item reveal" type="button" data-cat="colorful" data-index="4">
+          <img src="images/Gallery/images-5.jpeg"
+            alt="Colorful digital portrait of a girl with a floral headscarf and daisies">
+          <span class="work-cap"><span class="cat">Colorful</span><span class="title">Bloom &amp; Sparkle</span></span>
+        </button>
+        <button class="work-item reveal" type="button" data-cat="bw" data-index="5">
+          <img src="images/Gallery/images-6.jpeg"
+            alt="Black and white graphite portrait drawing with pencils resting beside it">
+          <span class="work-cap"><span class="cat">Black &amp; White</span><span class="title">Graphite
+              Study</span></span>
+        </button>
+        <button class="work-item reveal" type="button" data-cat="traditional" data-index="6">
+          <img src="images/Gallery/images-7.jpeg"
+            alt="Traditional colored pencil portrait of a girl with vivid red hair">
+          <span class="work-cap"><span class="cat">Traditional Art</span><span class="title">Crimson Gaze</span></span>
+        </button>
+        <button class="work-item reveal" type="button" data-cat="traditional" data-index="7">
+          <img src="images/Gallery/images-8.jpeg"
+            alt="Traditional pencil portrait of a girl wearing a wide-brimmed hat">
+          <span class="work-cap"><span class="cat">Traditional Art</span><span class="title">Wanderer's
+              Hat</span></span>
+        </button>
+        <button class="work-item reveal" type="button" data-cat="traditional" data-index="8">
+          <img src="images/Gallery/images-9.jpeg"
+            alt="Traditional colored pencil close-up portrait of a girl with a candy in her mouth">
+          <span class="work-cap"><span class="cat">Traditional Art</span><span class="title">Sweet
+              Distraction</span></span>
+        </button>
+        <button class="work-item reveal" type="button" data-cat="digital" data-index="9">
+          <img src="images/Gallery/images-10.jpeg"
+            alt="Digital illustration of a girl with purple hair looking puzzled, surrounded by question marks">
+          <span class="work-cap"><span class="cat">Digital Art</span><span class="title">Second-Guessing</span></span>
+        </button>
+        <button class="work-item reveal" type="button" data-cat="photography" data-index="10">
+          <img src="images/Gallery/images-11.jpeg"
+            alt="Photograph of a blue dusk sky with a jet contrail and glowing horizon">
+          <span class="work-cap"><span class="cat">Photography</span><span class="title">Vapor Trail</span></span>
+        </button>
+        <button class="work-item reveal" type="button" data-cat="photography" data-index="11">
+          <img src="images/Gallery/images-12.jpeg"
+            alt="Photograph of a bright streak of light crossing a twilight sky above glowing clouds">
+          <span class="work-cap"><span class="cat">Photography</span><span class="title">Night Streak</span></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container reveal">
+      <h2>Have an idea you'd like to see come to life, or want to commission a piece?</h2>
+      <a href="contact.html" class="btn"
+        style="background:var(--ink); border-color:var(--ink); color:var(--paper);">Let's Talk</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">LENDRAW<span class="dot">.</span></a>
+          <p style="margin-top:1rem; max-width:32ch;">Every line begins as a whisper of imagination — a little magic
+            learning, slowly, to breathe.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#works">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:lendraw30@gmail.com">lendraw30@gmail.com</a></li>
+            <li><a href="tel:+6289654713297">+6289654713297</a></li>
+            <li>Garut, Indonesia</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Lendra Pradianto — LENDRAW. Portfolio.</span>
+        <span>Made with ink, pixels and a bit of magic.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Artwork viewer">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close viewer">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button"
+      aria-label="Previous artwork">&#8249;</button>
+    <div class="lightbox-stage">
+      <img id="lightboxImg" src="" alt="">
+      <div class="lightbox-info">
+        <span class="cat" id="lightboxCat"></span>
+        <span class="title" id="lightboxTitle"></span>
+        <span class="count" id="lightboxCount"></span>
+      </div>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button"
+      aria-label="Next artwork">&#8250;</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
