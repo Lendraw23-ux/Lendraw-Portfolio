@@ -1,6 +1,6 @@
 /* =========================================================
-   KARSA. — Portofolio Artis Gambar
-   Design tokens
+   LENDRAW. — Portofolio Artis Gambar
+   css/style.css
    ========================================================= */
 :root {
   --ink: #16151a;
@@ -1007,6 +1007,7 @@ textarea:focus-visible {
   width: 48px; height: 48px;
   border-radius: 50%;
   font-size: 1.6rem;
+  z-index: 2;
 }
 .lightbox-nav:hover { transform: translateY(-50%) scale(1.06); }
 .lightbox-prev { left: clamp(0.5rem, 3vw, 2rem); }
