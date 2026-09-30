@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lendraw23-ux.github.io/Lendraw-Portfolio/sitemap.xml
